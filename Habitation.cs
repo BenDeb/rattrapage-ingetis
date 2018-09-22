@@ -12,9 +12,9 @@ public class Habitation
         this.surface = surface;
     }
 
-    public double Impot()
+    protected virtual double Impot()
     {
-        return surface * 2;
+        return this.surface * 2;
     }
 
     protected virtual void Affiche()
