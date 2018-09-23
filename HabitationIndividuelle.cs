@@ -18,7 +18,7 @@ public class HabitationIndividuelle : Habitation
         base.Affiche();
         Console.WriteLine("Proprietaire : " + this.proprietaire + ", adresse : " + this.adresse +
         ", surface : " + this.surface + ", nb pièces : " + this.NbPieces);
-        if (this.Piscine == True) 
+        if (this.Piscine) 
         {
             Console.WriteLine("Piscine : Oui")
         }
@@ -28,7 +28,7 @@ public class HabitationIndividuelle : Habitation
         }
     }
 
-    protected override Impot()
+    protected override double Impot()
     {
         int impot = this.surface * 2 + this.NbPieces * 100
         if (this.Piscine == True)
